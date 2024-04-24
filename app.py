@@ -15,7 +15,7 @@ csv.field_size_limit(100000000)
 df_emd = pd.read_csv('embedded_df_10_percent.csv')
 
 # Instantiate ChromaDB PersistentClient and define embedding function
-chroma_client_1 = chromadb.PersistentClient(path="my_vectordb")
+chroma_client_1 = chromadb.PersistentClient(path="my_chromadb")
 sentence_transformer_ef = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="all-mpnet-base-v2")
 
 # Get or create the collection
